@@ -1,5 +1,6 @@
+Lishun Wang(王理顺)
 ## About Me 
-Lishun Wang (王理顺); Ph.D. student; Chengdu Institute of Computer Application, Chinese Academy of Sciences
+Ph.D. student; Chengdu Institute of Computer Application, Chinese Academy of Sciences
 
 ## Research Interests
 Computational Imaging; Machine Learning; Deep Learning; Image Restoration
