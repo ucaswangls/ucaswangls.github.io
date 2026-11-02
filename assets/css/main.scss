@@ -23,3 +23,13 @@ $max-content-width: {{ site.max_width }};
   "tabler-icons/tabler-icons-filled.scss",
   "tabler-icons/tabler-icons-outline.scss"
 ;
+
+// Long Chinese project titles and publication metadata must fit narrow screens.
+.post-content, .post article { overflow-wrap: anywhere; }
+.post article > table { display: block; width: 100%; overflow-x: auto; }
+.profile .more-info { font-family: inherit; font-size: 0.9rem; }
+
+@media (max-width: 575.98px) {
+  // The theme's sidebar TOC has no layout height on narrow screens.
+  #toc-sidebar { display: none; }
+}

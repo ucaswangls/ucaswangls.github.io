@@ -1,25 +1,39 @@
 ---
 layout: about
-title: about
+title: 关于我
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
-
+subtitle: 中国科学院成都生物研究所 · 助理研究员
 profile:
   align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image: lishun-wang.png
+  image_circular: false
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
-
-news: true # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+    <p>王理顺 / Lishun Wang</p>
+    <p>中国 · 四川 · 成都</p>
+    <p><a href="mailto:690332121@qq.com">690332121@qq.com</a></p>
+news: false
+selected_papers: true
+social: true
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+我是**王理顺（Lishun Wang）**，现任中国科学院成都生物研究所助理研究员，入选四川省“天府峨眉计划”青年人才。长期从事**人工智能与计算成像**交叉研究，聚焦高速视频与高分辨光谱成像中的关键科学问题。
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+2023 年博士毕业于中国科学院大学计算机软件与理论专业，导师为钟勇研究员。2023 年 7 月至 2025 年 7 月，在西湖大学开展博士后研究，合作导师为袁鑫研究员；2025 年 7 月加入中国科学院成都生物研究所。
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+在算法层面，研究基于时空分解的视频重建与基于深度展开的光谱重建方法，提升高压缩比、大尺度数据的重建效率、质量及泛化能力；在系统层面，开展便携式成像设备设计，推动低功耗智能成像的应用。
+
+已在 IEEE TPAMI、IJCV、Photonics Research、CVPR、ICCV、ECCV 等期刊与会议发表论文 20 余篇。主持国家自然科学基金青年项目、四川省重大科技专项揭榜挂帅课题、四川省自然科学基金青年项目等，参与国家重点研发计划，并获多项授权发明专利及成果转化。
+
+## 研究方向
+
+- **视频快照压缩成像**：时空分解、高压缩比与大尺度视频重建。
+- **高分辨光谱成像**：深度展开、卷积与 Transformer 融合重建。
+- **低功耗智能成像系统**：移动端重建、便携式设备与显微成像。
+
+## 近期进展
+
+- **2026**：DetectSCI 论文发表于 CVPR；以通讯作者身份发表 DASFAA 和 ICASSP 论文。
+- **2026**：主持国家自然科学基金青年科学基金项目（C 类）与四川省自然科学基金青年科学基金 B 类项目。
+- **2025**：加入中国科学院成都生物研究所；入选四川省“天府峨眉计划”青年人才。
+
+[查看完整履历]({{ '/cv/' | relative_url }}) · [科研项目]({{ '/projects/' | relative_url }}) · [代表性论文]({{ '/publications/' | relative_url }})
