@@ -2,91 +2,72 @@
   {
     "title": "基本信息",
     "type": "map",
-    "contents": [
-      {
-        "name": "姓名",
-        "value": "王理顺 / Lishun Wang"
-      },
-      {
-        "name": "职务",
-        "value": "中国科学院成都生物研究所 · 助理研究员"
-      },
-      {
-        "name": "电子邮箱",
-        "value": "<a href=\"mailto:690332121@qq.com\">690332121@qq.com</a>"
-      },
-      {
-        "name": "所在地",
-        "value": "四川 · 成都"
-      }
-    ]
+    "contents":
+      [
+        { "name": "姓名", "value": "王理顺 / Lishun Wang" },
+        { "name": "职务", "value": "中国科学院成都生物研究所 · 助理研究员" },
+        { "name": "电子邮箱", "value": '<a href="mailto:690332121@qq.com">690332121@qq.com</a>' },
+        { "name": "所在地", "value": "四川 · 成都" },
+      ],
   },
   {
     "title": "工作经历",
     "type": "time_table",
-    "contents": [
-      {
-        "title": "助理研究员",
-        "institution": "中国科学院成都生物研究所",
-        "department": "生物资源利用中心 / 公共技术中心",
-        "year": "2025.07–至今"
-      },
-      {
-        "title": "博士后",
-        "institution": "西湖大学 · 工学院",
-        "department": "感知与计算成像实验室",
-        "year": "2023.07–2025.07",
-        "description": [
-          "合作导师：袁鑫研究员"
-        ]
-      }
-    ]
+    "contents":
+      [
+        { "title": "助理研究员", "institution": "中国科学院成都生物研究所", "department": "生物资源利用中心 / 公共技术中心", "year": "2025.07–至今" },
+        {
+          "title": "博士后",
+          "institution": "西湖大学 · 工学院",
+          "department": "感知与计算成像实验室",
+          "year": "2023.07–2025.07",
+          "description": ["合作导师：袁鑫研究员"],
+        },
+      ],
   },
   {
     "title": "教育背景",
     "type": "time_table",
-    "contents": [
-      {
-        "title": "计算机软件与理论 · 博士",
-        "institution": "中国科学院大学 · 计算机与控制学院",
-        "year": "2017.09–2023.06",
-        "description": [
-          "导师：钟勇研究员"
-        ]
-      },
-      {
-        "title": "森林资源保护 · 学士",
-        "institution": "四川农业大学 · 林学院",
-        "year": "2013.09–2017.06"
-      }
-    ]
+    "contents":
+      [
+        {
+          "title": "计算机软件与理论 · 博士",
+          "institution": "中国科学院大学 · 计算机与控制学院",
+          "year": "2017.09–2023.06",
+          "description": ["导师：钟勇研究员"],
+        },
+        { "title": "森林资源保护 · 学士", "institution": "四川农业大学 · 林学院", "year": "2013.09–2017.06" },
+      ],
   },
   {
     "title": "荣誉与奖励",
     "type": "list",
-    "contents": [
-      "2025 年：四川省“天府峨眉计划”青年人才",
-      "2023 年：中国科学院大学优秀毕业生",
-      "2023 年：川渝科技大会优秀论文一等奖",
-      "2019–2020 学年：中国科学院大学“三好学生”"
-    ]
+    "contents":
+      [
+        "2025 年：四川省“天府峨眉计划”青年人才",
+        "2023 年：中国科学院大学优秀毕业生",
+        "2023 年：川渝科技大会优秀论文一等奖",
+        "2019–2020 学年：中国科学院大学“三好学生”",
+      ],
   },
   {
     "title": "学术服务",
     "type": "list",
-    "contents": [
-      "期刊审稿：IEEE TPAMI、IEEE TIP、Pattern Recognition、Optica、Photonics Research、Optics Express",
-      "会议审稿：CVPR、ICCV、ECCV、NeurIPS、ACM Multimedia"
-    ]
+    "contents":
+      [
+        "期刊审稿：IEEE TPAMI、IEEE TIP、Pattern Recognition、Optica、Photonics Research、Optics Express",
+        "会议审稿：CVPR、ICCV、ECCV、NeurIPS、ACM Multimedia",
+      ],
   },
   {
     "title": "授权发明专利",
     "type": "list",
-    "contents": [
-      "王理顺、罗婷、刘星、袁鑫：向移动设备的高效高光谱成像方法、装置及其可读存储介质。ZL202510737831.5",
-      "罗婷、王理顺、刘星、袁鑫：一种单曝光压缩高光谱成像系统及方法。ZL202310199441.8",
-      "刘星、吴华铮、王理顺、曹淼、袁鑫：一种三维高速压缩成像方法及系统。ZL202311573003.X",
-      "窦雨菲、罗婷、王理顺、袁鑫：一种高速四维压缩全息显微成像装置及方法。ZL202311317641.5"
-    ]
-  }
+    "contents":
+      [
+        "王理顺、罗婷、刘星、袁鑫：向移动设备的高效高光谱成像方法、装置及其可读存储介质。ZL202510737831.5",
+        "罗婷、王理顺、刘星、袁鑫：一种单曝光压缩高光谱成像系统及方法。ZL202310199441.8",
+        "刘星、吴华铮、王理顺、曹淼、袁鑫：一种三维高速压缩成像方法及系统。ZL202311573003.X",
+        "窦雨菲、罗婷、王理顺、袁鑫：一种高速四维压缩全息显微成像装置及方法。ZL202311317641.5",
+      ],
+  },
 ]
