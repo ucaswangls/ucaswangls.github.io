@@ -5,7 +5,7 @@ permalink: /
 subtitle: 西南石油大学 · 特聘研究员
 profile:
   align: right
-  image: lishun-wang.png
+  image: wangls.jpg
   image_circular: false
   more_info: >
     <p>王理顺 / Lishun Wang</p>
