@@ -1,6 +1,6 @@
 {% if site.search_enabled %}
   <script type="module" src="{{ '/assets/js/search/ninja-keys.min.js' | relative_url | bust_file_cache }}"></script>
-  <ninja-keys hideBreadcrumbs noAutoLoadMdIcons placeholder="Type to start searching"></ninja-keys>
+  <ninja-keys hideBreadcrumbs noAutoLoadMdIcons placeholder="{{ ui.search }}"></ninja-keys>
   <script>
     let searchTheme = determineComputedTheme();
     const ninjaKeys = document.querySelector('ninja-keys');
@@ -26,20 +26,19 @@
 
     // add the home and posts menu items
     ninja.data = [
-      {%- for page in site.pages -%}
-        {%- if page.permalink == '/' -%}{%- assign about_title = page.title | strip -%}{%- endif -%}
-      {%- endfor -%}
+      {%- assign about_title = ui.about -%}
       {
         id: "nav-{{ about_title | slugify }}",
         title: "{{ about_title | truncatewords: 13 }}",
         section: "Navigation",
         handler: () => {
-          window.location.href = "{{ '/' | relative_url }}";
+          window.location.href = "{{ home_url | relative_url }}";
         },
       },
       {%- assign sorted_pages = site.pages | sort: "nav_order" -%}
       {%- for p in sorted_pages -%}
-        {%- if p.nav and p.autogen == null -%}
+        {%- assign nav_lang = p.lang | default: site.lang -%}
+        {%- if p.nav and p.autogen == null and nav_lang == active_lang -%}
           {%- if p.dropdown -%}
             {%- for child in p.children -%}
               {%- unless child.title == 'divider' -%}

@@ -1,9 +1,10 @@
+{% include i18n.liquid %}
 <header>
   <!-- Nav Bar -->
-  <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
+  <nav id="navbar" class="navbar navbar-light navbar-expand-lg {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
     <div class="container">
-      {% if page.permalink != '/' %}
-        <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
+      {% if page.translation_key != 'about' %}
+        <a class="navbar-brand title font-weight-lighter" href="{{ home_url | relative_url }}">
           {% if site.title == 'blank' %}
             {% if site.first_name %}
               <span class="font-weight-bold">
@@ -24,9 +25,24 @@
         <!-- Social Icons -->
         <div class="navbar-brand social">{% include social.liquid %}</div>
       {% endif %}
+      {% if page.translation_key %}
+        {% for alternate in site.pages %}
+          {% if alternate.translation_key == page.translation_key and alternate.lang != active_lang %}
+            <a
+              class="language-switch ml-auto order-lg-last"
+              href="{{ alternate.url | relative_url }}"
+              lang="{{ alternate.lang }}"
+              hreflang="{{ alternate.lang }}"
+              aria-label="{{ ui.switch }}"
+            >
+              {% if active_lang == 'en' %}中文{% else %}English{% endif %}
+            </a>
+          {% endif %}
+        {% endfor %}
+      {% endif %}
       <!-- Navbar Toggle -->
       <button
-        class="navbar-toggler collapsed ml-auto"
+        class="navbar-toggler collapsed ml-2"
         type="button"
         data-toggle="collapse"
         data-target="#navbarNav"
@@ -42,15 +58,13 @@
 
       <div class="collapse navbar-collapse text-right" id="navbarNav">
         <ul class="navbar-nav ml-auto flex-nowrap">
-          {% for page in site.pages %}
-            {% if page.permalink == '/' %} {% assign about_title = page.title %} {% endif %}
-          {% endfor %}
+          {% assign about_title = ui.about %}
 
           <!-- About -->
-          <li class="nav-item {% if page.permalink == '/' %}active{% endif %}">
-            <a class="nav-link" href="{{ '/' | relative_url }}">
+          <li class="nav-item {% if page.translation_key == 'about' %}active{% endif %}">
+            <a class="nav-link" href="{{ home_url | relative_url }}">
               {{- about_title }}
-              {% if page.permalink == '/' %}
+              {% if page.translation_key == 'about' %}
                 <span class="sr-only">(current)</span>
               {% endif %}
             </a>
@@ -59,7 +73,8 @@
           <!-- Other pages -->
           {% assign sorted_pages = site.pages | sort: 'nav_order' %}
           {% for p in sorted_pages %}
-            {% if p.nav and p.autogen == null %}
+            {% assign nav_lang = p.lang | default: site.lang %}
+            {% if p.nav and p.autogen == null and nav_lang == active_lang %}
               {% if p.dropdown %}
                 {% assign has_active_child = false %}
                 {% for child in p.children %}
@@ -77,7 +92,7 @@
                     aria-haspopup="true"
                     aria-expanded="false"
                   >
-                    {{- p.title }}
+                    {{- p.nav_title | default: p.title }}
                     {% if page.title == p.title or has_active_child %}
                       <span class="sr-only">(current)</span>
                     {% endif %}
@@ -99,7 +114,7 @@
                 <li class="nav-item {% if page.url contains parent_link %}active{% endif %}">
                   {% if p.permalink contains '/blog/' %}{% assign url = '/blog/' %} {% else %}{% assign url = p.url %}{% endif %}
                   <a class="nav-link" href="{{ url | relative_url }}">
-                    {{- p.title }}
+                    {{- p.nav_title | default: p.title }}
                     {% if page.url contains p.url %}
                       <span class="sr-only">(current)</span>
                     {% endif %}

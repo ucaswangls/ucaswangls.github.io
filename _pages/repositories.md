@@ -1,4 +1,6 @@
 ---
+lang: zh-CN
+translation_key: repositories
 layout: page
 permalink: /repositories/
 title: 开源代码

@@ -1,0 +1,4 @@
+{% assign active_lang = page.lang | default: site.lang %}
+{% assign ui = site.data.i18n[active_lang] %}
+{% assign home_url = '/' %}
+{% if active_lang == 'en' %}{% assign home_url = '/en/' %}{% endif %}

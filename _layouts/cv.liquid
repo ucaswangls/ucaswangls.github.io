@@ -1,6 +1,8 @@
 ---
 layout: default
 ---
+{% assign cv_entries = site.data.cv %}
+{% if page.lang == 'en' %}{% assign cv_entries = site.data.cv_en %}{% endif %}
 {% unless site.data.resume %}
   <div class="post">
     <header class="post-header">
@@ -23,7 +25,7 @@ layout: default
 
     <article>
       <div class="cv">
-        {% for entry in site.data.cv %}
+        {% for entry in cv_entries %}
           <a class="anchor" id="{{ entry.title }}"></a>
           <div class="card mt-3 p-3">
             <h3 class="card-title font-weight-medium">{{ entry.title }}</h3>

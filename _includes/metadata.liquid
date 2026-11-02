@@ -239,3 +239,11 @@
     }
   </script>
 {% endif %}
+
+{% if page.translation_key %}
+  {% for alternate in site.pages %}
+    {% if alternate.translation_key == page.translation_key %}
+      <link rel="alternate" hreflang="{{ alternate.lang }}" href="{{ alternate.url | absolute_url }}">
+    {% endif %}
+  {% endfor %}
+{% endif %}

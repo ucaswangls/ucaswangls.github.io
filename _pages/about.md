@@ -1,4 +1,6 @@
 ---
+lang: zh-CN
+translation_key: about
 layout: about
 title: 关于我
 permalink: /

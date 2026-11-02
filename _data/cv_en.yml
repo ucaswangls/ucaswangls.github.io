@@ -1,0 +1,85 @@
+[
+  {
+    "title": "Profile",
+    "type": "map",
+    "contents":
+      [
+        { "name": "Name", "value": "Lishun Wang / 王理顺" },
+        { "name": "Position", "value": "Southwest Petroleum University · Distinguished Research Fellow" },
+        { "name": "Email", "value": '<a href="mailto:wangls@swpu.edu.cn">wangls@swpu.edu.cn</a>' },
+        { "name": "Location", "value": "Chengdu, Sichuan, China" },
+      ],
+  },
+  {
+    "title": "Appointments",
+    "type": "time_table",
+    "contents":
+      [
+        {
+          "title": "Distinguished Research Fellow",
+          "institution": "Southwest Petroleum University",
+          "department": "School of Computer Science and Software Engineering",
+          "year": "Aug. 2026–present",
+        },
+        {
+          "title": "Assistant Researcher",
+          "institution": "Chengdu Institute of Biology, Chinese Academy of Sciences",
+          "department": "Bioresource Utilization Center / Public Technology Center",
+          "year": "Jul. 2025–Jul. 2026",
+        },
+        {
+          "title": "Postdoctoral Researcher",
+          "institution": "School of Engineering, Westlake University",
+          "department": "Sensing and Computational Imaging Laboratory",
+          "year": "Jul. 2023–Jul. 2025",
+          "description": ["Postdoctoral supervisor: Xin Yuan"],
+        },
+      ],
+  },
+  {
+    "title": "Education",
+    "type": "time_table",
+    "contents":
+      [
+        {
+          "title": "Ph.D. in Computer Software and Theory",
+          "institution": "School of Computer and Control Engineering, University of Chinese Academy of Sciences",
+          "year": "Sep. 2017–Jun. 2023",
+          "description": ["Ph.D. supervisor: Yong Zhong"],
+        },
+      ],
+  },
+  {
+    "title": "Honors and awards",
+    "type": "list",
+    "contents":
+      [
+        "2025: Selected for the young talent program of Sichuan's Tianfu EM Plan",
+        "2023: Outstanding Graduate, University of Chinese Academy of Sciences",
+        "2023: First Prize for Outstanding Paper, Sichuan–Chongqing Science and Technology Conference",
+        "2019–2020: Merit Student, University of Chinese Academy of Sciences",
+      ],
+  },
+  {
+    "title": "Academic service",
+    "type": "list",
+    "contents":
+      [
+        "Journal reviewer: IEEE TPAMI, IEEE TIP, Pattern Recognition, Optica, Photonics Research, Optics Express",
+        "Conference reviewer: CVPR, ICCV, ECCV, NeurIPS, ACM Multimedia",
+      ],
+  },
+  {
+    "title": "Granted Chinese invention patents",
+    "type": "list",
+    "contents":
+      [
+        "Open-world object reconstruction method, system, and applications for snapshot compressive imaging. ZL202610679326.4. Inventors: 王理顺、蒋海波、高源、钟勇.",
+        "Snapshot compressive imaging reconstruction method and system incorporating pretrained language models. ZL202610772811.6. Inventors: 王理顺、蒋海波、陈炯环、施哲宇.",
+        "Efficient hyperspectral imaging method, device, and readable storage medium for mobile devices. ZL202510737831.5. Inventors: 王理顺、罗婷、刘星、袁鑫.",
+        "Single-exposure compressive hyperspectral imaging system and method. ZL202310199441.8. Inventors: 罗婷、王理顺、刘星、袁鑫.",
+        "Three-dimensional high-speed compressive imaging method and system. ZL202311573003.X. Inventors: 刘星、吴华铮、王理顺、曹淼、袁鑫.",
+        "High-speed four-dimensional compressive holographic microscopy apparatus and method. ZL202311317641.5. Inventors: 窦雨菲、罗婷、王理顺、袁鑫.",
+      ],
+  },
+]

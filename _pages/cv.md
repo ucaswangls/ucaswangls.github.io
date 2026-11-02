@@ -1,4 +1,6 @@
 ---
+lang: zh-CN
+translation_key: cv
 layout: cv
 permalink: /cv/
 title: 个人履历

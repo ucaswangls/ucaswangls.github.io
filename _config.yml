@@ -6,11 +6,11 @@ title: 王理顺 | Lishun Wang
 first_name: Lishun
 middle_name:
 last_name: Wang
-email: 690332121@qq.com
+email: wangls@swpu.edu.cn
 description: >
-  王理顺，中国科学院成都生物研究所助理研究员，研究方向为人工智能与计算成像、高速视频及高分辨光谱成像。
+  王理顺，西南石油大学特聘研究员，研究方向为智能成像、三维重建、高效多模态大模型和具身智能。
 footer_text: >
-  王理顺 · 中国科学院成都生物研究所 · Powered by <a href="https://jekyllrb.com/">Jekyll</a> and <a href="https://github.com/alshedivat/al-folio">al-folio</a>.
+  王理顺 · 西南石油大学 · Powered by <a href="https://jekyllrb.com/">Jekyll</a> and <a href="https://github.com/alshedivat/al-folio">al-folio</a>.
 keywords: 王理顺, Lishun Wang, 计算成像, 压缩感知, 高光谱成像, 人工智能
 lang: zh-CN
 icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)

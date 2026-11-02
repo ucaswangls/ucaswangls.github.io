@@ -1,0 +1,24 @@
+{
+  "zh-CN":
+    {
+      "about": "关于我",
+      "publications": "代表性论文",
+      "contact": "学术交流与合作请通过电子邮件联系。",
+      "search": "搜索页面",
+      "filter": "输入关键词筛选论文",
+      "navigation": "导航",
+      "footer": "西南石油大学",
+      "switch": "Switch to English",
+    },
+  "en":
+    {
+      "about": "About",
+      "publications": "Selected publications",
+      "contact": "For research inquiries and collaboration, please contact me by email.",
+      "search": "Search pages",
+      "filter": "Type to filter publications",
+      "navigation": "Navigation",
+      "footer": "Southwest Petroleum University",
+      "switch": "切换到中文",
+    },
+}

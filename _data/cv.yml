@@ -15,8 +15,13 @@
     "type": "time_table",
     "contents":
       [
-      { "title": "特聘研究员", "institution": "西南石油大学", "department": "计算机与软件学院", "year": "2026.08–至今" },
-        { "title": "助理研究员", "institution": "中国科学院成都生物研究所", "department": "生物资源利用中心 / 公共技术中心", "year": "2025.07–206.07" },
+        { "title": "特聘研究员", "institution": "西南石油大学", "department": "计算机与软件学院", "year": "2026.08–至今" },
+        {
+          "title": "助理研究员",
+          "institution": "中国科学院成都生物研究所",
+          "department": "生物资源利用中心 / 公共技术中心",
+          "year": "2025.07–2026.07",
+        },
         {
           "title": "博士后",
           "institution": "西湖大学 · 工学院",
@@ -36,7 +41,7 @@
           "institution": "中国科学院大学 · 计算机与控制学院",
           "year": "2017.09–2023.06",
           "description": ["导师：钟勇研究员"],
-        }
+        },
       ],
   },
   {

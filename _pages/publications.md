@@ -1,4 +1,6 @@
 ---
+lang: zh-CN
+translation_key: publications
 layout: page
 permalink: /publications/
 title: 代表性论文

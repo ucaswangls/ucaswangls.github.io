@@ -43,3 +43,13 @@ bundle exec jekyll serve
 - 保留 al-folio 的响应式布局、暗色模式与论文搜索。
 
 原主题遵循 MIT License，详见 `LICENSE`。
+
+## 中英文页面维护
+
+中文页面位于 `_pages/`，对应英文页面位于 `_pages/en/`。例如个人简介为 `_pages/about.md` 和 `_pages/en/about.md`，科研项目为 `_pages/projects.md` 和 `_pages/en/projects.md`。履历数据分别在 `_data/cv.yml` 和 `_data/cv_en.yml`。
+
+每对页面通过相同的 `translation_key` 关联，语言分别为 `lang: zh-CN` 和 `lang: en`；修改内容时请同步更新两种语言。导航栏切换链接会跳转到当前栏目的对应语言页面。共享界面文字位于 `_data/i18n.yml`。
+
+头像仍由简介文件中的 `profile.image` 指定；两种语言共用 `assets/img/wangls.jpg`。头像栏宽度在 `assets/css/main.scss` 的 `.profile` 样式中设置，照片保持原始宽高比。
+
+构建后运行 `python3 bin/check-translations.py _site` 验证十个中英文页面的导航与切换链接。
