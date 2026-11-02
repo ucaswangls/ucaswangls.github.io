@@ -10,8 +10,15 @@ class Links(HTMLParser):
     def __init__(self):
         super().__init__()
         self.targets = []
+        self.search_fields = []
+        self.logos = []
 
     def handle_starttag(self, tag, attrs):
+        values = dict(attrs)
+        if tag == 'input' and values.get('id') == 'bibsearch':
+            self.search_fields.append(values)
+        if tag == 'img' and 'university-logo' in values.get('class', '').split():
+            self.logos.append(values)
         for key, value in attrs:
             if value and (key == 'src' or (key == 'href' and tag in ('a', 'link'))):
                 self.targets.append(value)
@@ -27,7 +34,17 @@ def main():
     pages = list(root.rglob('*.html'))
     for page in pages:
         parser = Links()
-        parser.feed(page.read_text(encoding='utf-8'))
+        html = page.read_text(encoding='utf-8')
+        parser.feed(html)
+        if not parser.logos:
+            errors.append(f'{page.relative_to(root)}: university logo missing')
+        if page.relative_to(root).as_posix() in ('publications/index.html', 'en/publications/index.html'):
+            if len(parser.search_fields) != 1:
+                errors.append(f'{page.relative_to(root)}: expected one rendered publication search input')
+            elif not parser.search_fields[0].get('placeholder') or not parser.search_fields[0].get('aria-label'):
+                errors.append(f'{page.relative_to(root)}: publication search label is empty')
+            if '&lt;input' in html:
+                errors.append(f'{page.relative_to(root)}: search markup rendered as visible text')
         for target in parser.targets:
             url = urlsplit(target)
             if url.scheme or url.netloc or not url.path:

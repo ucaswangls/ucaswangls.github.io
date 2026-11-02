@@ -1,12 +1,15 @@
 {% if site.bib_search %}
+  {% include i18n.liquid %}
   <script src="{{ '/assets/js/bibsearch.js' | relative_url | bust_file_cache }}" type="module"></script>
-  <input
-    type="text"
-    id="bibsearch"
-    spellcheck="false"
-    autocomplete="off"
-    class="search bibsearch-form-input"
-    placeholder="{{ ui.filter }}"
-    aria-label="{{ ui.filter }}"
-  >
+  <div class="publication-search" markdown="0">
+    <input
+      type="text"
+      id="bibsearch"
+      spellcheck="false"
+      autocomplete="off"
+      class="search bibsearch-form-input"
+      placeholder="{{ ui.filter }}"
+      aria-label="{{ ui.filter }}"
+    >
+  </div>
 {% endif %}

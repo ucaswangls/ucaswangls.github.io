@@ -53,3 +53,11 @@ bundle exec jekyll serve
 头像仍由简介文件中的 `profile.image` 指定；两种语言共用 `assets/img/wangls.jpg`。头像栏宽度在 `assets/css/main.scss` 的 `.profile` 样式中设置，照片保持原始宽高比。
 
 构建后运行 `python3 bin/check-translations.py _site` 验证十个中英文页面的导航与切换链接。
+
+## 学校标识与论文搜索
+
+顶部校徽使用西南石油大学官网的原始标识资源（来源：https://www.swpu.edu.cn/images/public/blacklogo.png），保存在 `assets/img/swpu-official-logo.png`；页面通过 CSS 显示标识左侧的圆形校徽，点击进入学校官网。
+
+首页人物区由 `_layouts/about.liquid` 渲染，照片在左、姓名与任职信息在右；中英文任职和实验室信息仍在各自的 `_pages/about.md` / `_pages/en/about.md` 中维护。
+
+论文搜索 HTML 放在 `_includes/bib_search.liquid` 的独立 HTML 容器内，防止 Markdown 将多行 input 当作正文；该组件在内容渲染时自行加载语言文案。

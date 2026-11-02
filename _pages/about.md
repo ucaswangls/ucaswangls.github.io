@@ -5,6 +5,7 @@ layout: about
 title: 关于我
 permalink: /
 subtitle: 西南石油大学 · 特聘研究员
+affiliation_detail: 西南石油大学 · 计算机与软件学院 · IPPC 实验室
 profile:
   align: right
   image: wangls.jpg

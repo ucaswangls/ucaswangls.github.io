@@ -42,3 +42,31 @@ $max-content-width: {{ site.max_width }};
 @media (max-width: 575.98px) {
   .profile.float-right, .profile.float-left { float: none !important; margin: 0 auto 1.5rem; }
 }
+
+// University mark and the portrait-led academic introduction follow the reference.
+#navbar > .container { max-width: none; padding-left: 28px; padding-right: 28px; }
+#navbar { min-height: 80px; }
+.university-brand { display: inline-flex; flex: 0 0 auto; align-items: center; margin-right: 1.5rem; }
+.university-logo { display: block; width: 56px; height: 56px; object-fit: cover; object-position: left; border-radius: 50%; background: #fff; }
+body.fixed-top-nav { padding-top: 80px; }
+.academic-hero { display: grid; grid-template-columns: 190px minmax(0, 1fr); gap: 2.75rem; align-items: center; margin: 1.5rem 0 2.75rem; }
+.hero-portrait { margin: 0; }
+.hero-portrait figure { margin: 0; }
+.hero-portrait img { width: 190px; height: auto; }
+.hero-details .post-title { margin: 0 0 1.1rem; font-size: 2.8rem; line-height: 1.2; font-weight: 400; }
+.hero-name-en { font-size: 0.7em; margin-left: 0.35rem; }
+.hero-position { font-size: 1.15rem; margin-bottom: 0.4rem; }
+.hero-affiliation, .hero-email { margin-bottom: 0.4rem; line-height: 1.6; }
+.hero-email a { color: var(--global-text-color); }
+.hero-social { margin-top: 0.85rem; }
+.hero-social .contact-icons { font-size: 2.1rem; text-align: left; }
+.publication-search { margin-bottom: 1.5rem; }
+@media (max-width: 575.98px) {
+  #navbar > .container { padding-left: 16px; padding-right: 16px; }
+  #navbar { min-height: 68px; }
+  body.fixed-top-nav { padding-top: 68px; }
+  .university-logo { width: 48px; height: 48px; }
+  .academic-hero { grid-template-columns: minmax(0, 1fr); gap: 1.5rem; margin-top: 0; }
+  .hero-portrait { justify-self: center; }
+  .hero-details .post-title { font-size: 2.25rem; }
+}

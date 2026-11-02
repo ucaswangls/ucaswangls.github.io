@@ -6,6 +6,7 @@ title: About
 permalink: /en/
 description: Lishun Wang, Distinguished Research Fellow at Southwest Petroleum University. Research in intelligent imaging, 3D reconstruction, efficient multimodal large models, and embodied intelligence.
 subtitle: Southwest Petroleum University · Distinguished Research Fellow
+affiliation_detail: School of Computer Science and Software Engineering · IPPC Laboratory
 profile:
   align: right
   image: wangls.jpg
